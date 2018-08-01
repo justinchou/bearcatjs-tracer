@@ -9,3 +9,5 @@ node_modules/*
 
 demo0[1-4].js
 demo05
+*.log
+example
