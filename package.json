@@ -1,6 +1,6 @@
 {
   "name": "bearcatjs-tracer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "trace info among micro-services",
   "main": "lib/Tracer.js",
   "repository": "https://github.com/justinchou/bearcatjs-tracer.git",
