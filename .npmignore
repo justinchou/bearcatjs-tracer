@@ -7,6 +7,4 @@ node_modules/*
 *.sublime-project
 *.sublime-workspace
 
-demo0[1-4].js
-demo05
-demo07.js
+example
