@@ -1,3 +1,5 @@
+[![Build Status][ci-img]][ci] [![NPM Published Version][npm-img]][npm]
+
 # bearcatjs-tracer
 
 trace info among micro-services
@@ -60,3 +62,8 @@ trace info among micro-services
 
 Todo In The Future.
 
+
+[ci-img]: https://travis-ci.com/justinchou/bearcatjs-tracer.svg?branch=master
+[ci]: https://travis-ci.com/justinchou/bearcatjs-tracer
+[npm-img]: https://badge.fury.io/js/bearcatjs-tracer.svg
+[npm]: https://www.npmjs.com/package/bearcatjs-tracer
