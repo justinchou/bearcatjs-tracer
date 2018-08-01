@@ -11,10 +11,11 @@
     "test": "mocha"
   },
   "dependencies": {
-    "bearcatjs-logger": "^1.0.7",
+    "debug": "^3.1.0",
     "jaeger-client": "^3.11.0"
   },
   "devDependencies": {
+    "bearcatjs-logger": "^1.0.7",
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
   }

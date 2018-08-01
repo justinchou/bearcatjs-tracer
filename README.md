@@ -18,10 +18,10 @@ trace info among micro-services
 
   ```js
   // init the tracer.
-  const tracer = new Tracer('ApiService');
+  const tracer = new Tracer({serviceName: "ApiService", logger: console});
   const span = tracer.getSpan("Register").init();
   
-  // trace info 
+  // trace info, data is string/bool/number/object 
   evt = "register-email";
   data = "zhou78620051@126.com";
   span.info(evt, data);
@@ -56,6 +56,22 @@ trace info among micro-services
   evt = "sub-register-spx";
   subData = {...data, txHash: "0x1234"};
   subSpan.infoEnd(evt, subData);
+  ```
+
+5. In Process C:
+
+  ```js
+  // recving data from service B.
+  
+  // init the tracer.
+  const refTracer = new Tracer();
+
+  // set current tracer brother of tracer B.
+  const refSpan = subTracer.getSpan("RefRegister").followsFrom(data);
+  
+  evt = "ref-register-spx";
+  data = {...data, logInfo: {txHash: "0x234"}};
+  refSpan.infoEnd(evt, data);
   ```
 
 ### Apis
