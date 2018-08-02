@@ -6,11 +6,8 @@ let config = {
   serviceName: 'BearcatService',
   disable: false,
   sampler: {
-    type: 'remote',
-    param: 0.5,
-    host: "127.0.0.1",
-    port: 5778,
-    refreshIntervalMs: 10 
+    type: 'const',
+    param: 1
   },
   
   reporter: {
