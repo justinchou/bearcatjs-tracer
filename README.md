@@ -110,14 +110,14 @@ Jaeger Config Schema
   * port {Number} default 5778, port to fetch sample config
   * refreshIntervalMs {Number} default 60000ms, Every interval ms fetch the sample settings from server.
 * reporter {Object} Used To Transfer Data To Jaeger Backend.
-  logSpans {Boolean} true to log sent data 
-  agentHost {Number} default "127.0.0.1", agent udp host
-  agentPort {Number} default 6832, agent udp port
-  flushIntervalMs {Number} default 1000ms. Interval to flush the data cached by the sender to agent.
+  * logSpans {Boolean} true to log sent data 
+  * agentHost {Number} default "127.0.0.1", agent udp host
+  * agentPort {Number} default 6832, agent udp port
+  * flushIntervalMs {Number} default 1000ms. Interval to flush the data cached by the sender to agent.
 * throttler {Object} Rate Limit Usage.
-  host {String}
-  port {Number}
-  refreshIntervalMs {Number}
+  * host {String}
+  * port {Number}
+  * refreshIntervalMs {Number}
 
 ##### Different Sampler Types
 
